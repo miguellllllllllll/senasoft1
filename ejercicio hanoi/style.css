@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  h1{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+  }
+  
+  .left-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 5px;
+    background: #006125;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .new-game {
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .new-game select {
+    background: #00a236;
+    color: #FFF;
+    padding: 2px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  .speed {
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .speed p {
+    font-size: 12px;
+    font-weight: light;
+    color: floralwhite;
+  }
+  
+  #speedRange {
+    width: 100%;
+    height: 3px;
+  }
+  
+  button {
+    background: #10e368;
+    border-radius: 9px;
+    border-style: none;
+    color: #FFF;
+    cursor: pointer;
+    padding: 5px 16px;
+    margin: 10px;
+  }
+  
+  button:hover {
+    background: #066030;
+  }
+  
+  .stage {
+    height: 240px;
+    background: rgb(144, 3, 3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .tower {
+    width: 130px;
+    height: 200px;
+    background: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .stem {
+    width: 10px;
+    height: 180px;
+    background: #000;
+    position: absolute;
+    border-radius: 5px;
+  }
+  
+  .plate {
+    width: 115px;
+    height: 20px;
+    background: brown;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  
+  .disc {
+    height: 18px;
+    border-radius: 3px;
+    z-index: 1;
+  }
+  
+  .is-dragging {
+    opacity: 0.3;
+  }
