@@ -1,46 +1,219 @@
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);  
  
-}
+  backdrop-filter: blur(5px); 
+  }
+  
+  .logo img {
+    max-width: 150px; 
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    .logo {
+            max-width: 100%;
+        }
+    .redes-sociales img {
+            width: 25px; 
+        }
 
-
-#acerca-de,
-#galeria,
-#informacion,
-#patrocinadores,
-#registro {
-    padding: 50px;
-}
-
-
-#galeria img {
     
+    }
+    }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .redes-sociales {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .redes-sociales img {
+    width: 30px;
+    height: 30px;
+  }
+
+
+  .container-nosotros {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-container-nosotros {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-container-nosotros img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
 }
 
 
-.btn-anim {
-    
+
+
+
+  .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+  .image-container-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container-galeria img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container-galeria img:hover {
+    transform: scale(1.1);
+}
+.btn-galeria {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+
+}
+
+.btn-galeria:hover {
+    background-color: #3e8e41;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container-informacion {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
     position: relative;
-    overflow: hidden;
 }
-.btn-anim::after {
-    
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 100%;
-    background: #000;
-    transition: all 0.3s ease;
+
+.content-informacion {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
 }
-.btn-anim:hover::after {
+
+.content-informacion img {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.container-logos {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container img {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    opacity: 0.5; /* Opacidad inicial (gris) */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.logo-container img:hover {
+    opacity: 1; /* Opacidad al pasar el cursor */
+}
+
+
+
+
+
+
+.container-formulario {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form {
     width: 100%;
 }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacto {
+    text-align: right;
+}
+
+
+
+  

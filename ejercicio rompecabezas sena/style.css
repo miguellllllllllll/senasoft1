@@ -1,0 +1,43 @@
+.puzzle {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  
+  width: 300px;
+  height: 300px;
+  }
+  
+  .piece {
+    border: 1px solid black;
+    /* background-size: cover;
+    background-position: center; */
+  }
+  
+ 
+  /* .piece:nth-child(1) {
+    background-image: url('imagenes/1.png');
+  }
+  .piece:nth-child(2) {
+    background-image: url('imagenes/2.png');
+  }
+  .piece:nth-child(3) {
+    background-image: url('imagenes/3.png');
+  }
+  .piece:nth-child(4) {
+    background-image: url('imagenes/4.png');
+  }
+  .piece:nth-child(5) {
+    background-image: url('imagenes/5.png');
+  }
+  .piece:nth-child(6) {
+    background-image: url('imagenes/2.png');
+  }
+  .piece:nth-child(7) {
+    background-image: url('imagenes/7.png');
+  }
+  .piece:nth-child(8) {
+    background-image: url('imagenes/8.png');
+  }
+  .piece:nth-child(9) {
+    background-image: url('imagenes/9.png'); */
+  } */
