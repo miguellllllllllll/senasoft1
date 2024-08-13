@@ -14,7 +14,7 @@ const getHanoiSolutions = (nDiscs) => {
       // Mueve n - 1 discos desde el origen al auxiliar, usando el destino como clavija auxiliar
       hanoi(n - 1, origin, aux, destiny)
   
-      // Mueve el disco n-ésimo desde el origen hasta el destino
+      // Mueve el disco mas grande desde el origen hasta el destino
       solutions.push({ disc: n, origin, destiny })
   
       // Mueva n - 1 discos desde aux hasta destino, usando el origen como clavija auxiliar
