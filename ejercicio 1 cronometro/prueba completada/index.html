@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cronómetro WorldSkills 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cronómetro WorldSkills 2024</h1>
+        <label for="skill">Habilidad:</label>
+        <input type="text" id="skill">
+        <label for="module">Módulo:</label>
+        <input type="text" id="module">
+        <label for="hours">Horas:</label>
+        <input type="number" id="hours" min="0">
+        <label for="minutes">Minutos:</label>
+        <input type="number" id="minutes" min="0" max="59">
+        <label for="seconds">Segundos:</label>
+        <input type="number" id="seconds" min="0" max="59">
+        <button onclick="startCountdown()">Iniciar Cuenta Atrás</button>
+        <!-- <div id="countdownContainer" class="hidden"></div> -->
+        <div id="countdown" class="disabled">
+            <span id="hoursDisplay">00</span>
+            <span>Horas</span>
+            <span id="minutesDisplay">00</span>
+            <span>Minutos</span>
+            <span id="secondsDisplay">00</span>
+            <span>Segundos</span>
+        </div>
+        <!-- </div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

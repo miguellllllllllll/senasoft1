@@ -1,0 +1,14 @@
+.torre {
+    width: 100px;
+    height: 300px;
+    border: 1px solid black;
+    float: left;
+  }
+  
+  .disco {
+    width: 80px;
+    height: 20px;
+    background-color: blue;
+    margin: 5px auto;
+  }
+  

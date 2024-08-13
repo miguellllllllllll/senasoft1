@@ -1,0 +1,46 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+ 
+}
+
+
+#acerca-de,
+#galeria,
+#informacion,
+#patrocinadores,
+#registro {
+    padding: 50px;
+}
+
+
+#galeria img {
+    
+}
+
+
+.btn-anim {
+    
+    position: relative;
+    overflow: hidden;
+}
+.btn-anim::after {
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: #000;
+    transition: all 0.3s ease;
+}
+.btn-anim:hover::after {
+    width: 100%;
+}

@@ -1,0 +1,20 @@
+/* style.css */
+.pieza, .pieza-destino {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    float: left;
+}
+
+#panel-izquierdo .pieza {
+    /* Estilos adicionales para las piezas del panel izquierdo */
+    background-image: url(/imagenes/worldskils.png);
+    opacity: 20%;
+}
+
+#panel-derecho .pieza-destino {
+    /* Estilos adicionales para las piezas del panel derecho,
+       incluyendo la imagen de fondo */
+    background-image: url('/imagenes/worldskils.png');
+    background-size: cover;
+}
